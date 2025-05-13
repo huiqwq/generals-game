@@ -22,9 +22,9 @@ class Ui_chooseMenu
 public:
     QWidget *widget;
     QVBoxLayout *verticalLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QPushButton *pvp;
+    QPushButton *pve;
+    QPushButton *esc;
 
     void setupUi(QWidget *chooseMenu)
     {
@@ -37,20 +37,20 @@ public:
         verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton = new QPushButton(widget);
-        pushButton->setObjectName("pushButton");
+        pvp = new QPushButton(widget);
+        pvp->setObjectName("pvp");
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(pvp);
 
-        pushButton_2 = new QPushButton(widget);
-        pushButton_2->setObjectName("pushButton_2");
+        pve = new QPushButton(widget);
+        pve->setObjectName("pve");
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(pve);
 
-        pushButton_3 = new QPushButton(widget);
-        pushButton_3->setObjectName("pushButton_3");
+        esc = new QPushButton(widget);
+        esc->setObjectName("esc");
 
-        verticalLayout->addWidget(pushButton_3);
+        verticalLayout->addWidget(esc);
 
 
         retranslateUi(chooseMenu);
@@ -61,9 +61,9 @@ public:
     void retranslateUi(QWidget *chooseMenu)
     {
         chooseMenu->setWindowTitle(QCoreApplication::translate("chooseMenu", "Form", nullptr));
-        pushButton->setText(QCoreApplication::translate("chooseMenu", "PushButton", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("chooseMenu", "PushButton", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("chooseMenu", "PushButton", nullptr));
+        pvp->setText(QCoreApplication::translate("chooseMenu", "\345\217\214\344\272\272\345\257\271\346\210\230", nullptr));
+        pve->setText(QCoreApplication::translate("chooseMenu", "AI\345\257\271\346\210\230", nullptr));
+        esc->setText(QCoreApplication::translate("chooseMenu", "\350\277\224\345\233\236\344\270\212\344\270\200\347\272\247", nullptr));
     } // retranslateUi
 
 };

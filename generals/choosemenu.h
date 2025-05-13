@@ -15,6 +15,9 @@ public:
     explicit chooseMenu(QWidget *parent = nullptr);
     ~chooseMenu();
 
+private slots:
+    void on_pvp_clicked();
+
 private:
     Ui::chooseMenu *ui;
 };

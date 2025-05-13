@@ -11,12 +11,20 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Network)
 
+set(UI_FILES
+  gamewindow.ui
+)
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+
+        gamewindow.h
+        gamewindow.cpp
+        gamewindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -24,7 +32,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         beginwindow.h beginwindow.cpp beginwindow.ui
-        choosemenu.h choosemenu.cpp choosemenu.ui
+
+        mapbutton.h mapbutton.cpp
+        choosemenu.ui
+        choosemenu.h
+        choosemenu.cpp
+        gamewindow.h gamewindow.cpp gamewindow.ui
+        clientnetwork.h clientnetwork.cpp
+
+
+
 
 
     )
@@ -47,6 +64,7 @@ else()
 endif()
 
 target_link_libraries(generals PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(generals PRIVATE Qt6::Network)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -71,4 +89,5 @@ install(TARGETS generals
 
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(generals)
+
 endif()

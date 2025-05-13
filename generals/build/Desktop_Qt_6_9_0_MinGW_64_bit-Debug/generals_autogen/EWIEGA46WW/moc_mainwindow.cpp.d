@@ -151,8 +151,17 @@ C:/Users/HUiA1/Documents/generals/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/gene
   C:/Qt/6.9.0/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QGridLayout \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlayout.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -369,4 +378,5 @@ C:/Users/HUiA1/Documents/generals/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/gene
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/HUiA1/Documents/generals/MapButton.h

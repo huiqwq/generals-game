@@ -24,21 +24,21 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="pvpButton">
+     <widget class="QPushButton" name="pvp">
       <property name="text">
        <string>双人对战</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="pve">
       <property name="text">
        <string>AI对战</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="esc">
       <property name="text">
        <string>返回上一级</string>
       </property>
